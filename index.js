@@ -280,7 +280,9 @@ app.get("/orders/:userId",async(req,res) => {
     res.status(500).json({ message: "Error"});
   }
 })
-
+app.get('/', (req, res) => {
+  return res.json({message : "hello from server"});
+})
 app.listen(port, () => {
   console.log(`Listening in the port number ${port}`);
 });
