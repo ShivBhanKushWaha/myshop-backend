@@ -54,7 +54,7 @@ const sendVerificationEmail = async (email, verificationToken) => {
     from: "amazon.com",
     to: email,
     subject: "Please Verify your Email Account!",
-    text: `Please click the following links to verify your mail : http://localhost:8000/verify/${verificationToken}`,
+    text: `Please click the following links to verify your mail : https://myshop-backend-k7sa.onrender.com/verify/${verificationToken}`,
   };
 
   // send the email to user
